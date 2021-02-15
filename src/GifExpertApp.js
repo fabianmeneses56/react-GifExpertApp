@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { AddCategory } from "./components/AddCategory";
 import { GifGrid } from "./components/GifGrid";
 
-export const GifExpertApp = () => {
-  const [categories, setcategories] = useState(["ester exposito"]);
+export const GifExpertApp = ({ defaultCategories = [] }) => {
+  const [categories, setcategories] = useState(defaultCategories);
 
   /* const agregarCate=()=>{
         setcategories([...categories,'salamanca'])
